@@ -1,16 +1,9 @@
 import React from 'react';
 import ViewComfyIcon from "@mui/icons-material/ViewComfy";
-import {Typography} from "@mui/material";
-//       display: { xs: 'none', md: 'flex' }, display: { xs: 'none', md: 'flex' }
+import {Box, Typography} from "@mui/material";
 
-type Styles = {}
-
-interface Props {
-    styles: Styles
-}
-
-const Logo = ({styles}: Props) => {
-    const baseStyles: Styles = {
+const Logo = () => {
+    const styles = {
         mr: 2,
         fontFamily: 'monospace',
         fontWeight: 700,
@@ -20,18 +13,18 @@ const Logo = ({styles}: Props) => {
     }
 
     return (
-        <>
-            <ViewComfyIcon sx={{ ...styles, mr: 1 }} />
+        <Box>
+            <ViewComfyIcon sx={{ mr: 1 }} />
             <Typography
                 variant="h6"
                 noWrap
                 component="a"
                 href="/"
-                sx={{...styles, ...baseStyles}}
+                sx={styles}
             >
                 Layouts
             </Typography>
-        </>
+        </Box>
     );
 };
 

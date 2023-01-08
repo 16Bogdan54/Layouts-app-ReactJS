@@ -9,19 +9,15 @@ const Hero = () => {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            display: 'flex',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-            justifyContent: 'space-evenly',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, min-max(320px, 1fr))'
         }}>
-            <Box sx={{
-
-            }}>
+            <Box>
                 <h1>The perfect set of css layouts ideas for your project</h1>
                 <p>If you don’t wanna waste your time writing boilerplate code in your CSS files check out our layouts!  </p>
             </Box>
-           <Box>
-               <img src="src/assets/insert-block.svg" alt="illustration blocks"/>
+           <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+               <img className="w-[80%]" src="src/assets/insert-block.svg" alt="illustration blocks"/>
            </Box>
         </Box>
     );

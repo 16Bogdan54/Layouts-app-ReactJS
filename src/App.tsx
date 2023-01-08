@@ -14,7 +14,7 @@ function App() {
 
   return (
     <Box>
-      <NavBar/>
+        <NavBar/>
         <Hero/>
     </Box>
   )

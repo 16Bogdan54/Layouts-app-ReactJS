@@ -9,7 +9,7 @@ const Menu = () => {
     const handleCloseNavMenu = () => setAnchorElNav(null);
 
     return (
-        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+        <Box sx={{display: { xs: 'none', md: 'flex'} }}>
             {pages.map((page) => (
                 <Button
                     key={page}

@@ -9,12 +9,11 @@ const NavBar  = () => {
 
     return (
         <AppBar position="sticky" sx={{backgroundColor: '#313D5A'}}>
-            <Container maxWidth="xl" >
-                <Toolbar disableGutters>
-                    <Logo styles={{display: { xs: 'none', md: 'flex' }}}/>
-                    <MobileMenu/>
-                    <Logo styles={{display: { xs: 'flex', md: 'none' }}}/>
+            <Container maxWidth="xl">
+                <Toolbar disableGutters sx={{width: '100%',display:'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+                    <Logo/>
                     <Menu/>
+                    <MobileMenu/>
                 </Toolbar>
             </Container>
         </AppBar>
