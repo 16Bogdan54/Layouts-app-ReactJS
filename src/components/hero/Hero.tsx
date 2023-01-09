@@ -17,7 +17,7 @@ const Hero = () => {
                 <p>If you don’t wanna waste your time writing boilerplate code in your CSS files check out our layouts!  </p>
             </Box>
            <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-               <img className="w-[80%]" src="src/assets/insert-block.svg" alt="illustration blocks"/>
+               <img src="src/assets/insert-block.svg" alt="illustration blocks"/>
            </Box>
         </Box>
     );
