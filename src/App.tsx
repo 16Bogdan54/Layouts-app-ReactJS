@@ -1,7 +1,7 @@
 import {Box} from '@mui/material';
 import NavBar from "./components/nav/NavBar";
 import Hero from "./components/hero/Hero";
-import Cards from "./components/cards/Cards"
+import AuthorCards from "./components/cards/AuthorCards"
 /*
 <Code className="whitespace-pre d-block border-2" bg="transparent" color="white" children={
           `.box {
@@ -17,7 +17,7 @@ function App() {
     <Box>
         <NavBar/>
         <Hero/>
-        <Cards/>
+        <AuthorCards/>
     </Box>
   )
 }
