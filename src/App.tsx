@@ -1,7 +1,9 @@
 import {Box} from '@mui/material';
 import NavBar from "./components/nav/NavBar";
-import Hero from "./components/hero/Hero";
-import AuthorCards from "./components/cards/AuthorCards"
+import AppRoutes from "./components/routes/AppRoutes";
+// import Hero from "./components/hero/Hero";
+// import AuthorCards from "./components/cards/AuthorCards"
+
 /*
 <Code className="whitespace-pre d-block border-2" bg="transparent" color="white" children={
           `.box {
@@ -16,8 +18,9 @@ function App() {
   return (
     <Box>
         <NavBar/>
-        <Hero/>
-        <AuthorCards/>
+        <AppRoutes/>
+        {/*<Hero/>*/}
+        {/*<AuthorCards/>*/}
     </Box>
   )
 }

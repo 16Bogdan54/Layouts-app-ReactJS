@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import MenuIcon from "@mui/icons-material/Menu";
 import {Box, IconButton, Menu, MenuItem, Typography} from "@mui/material";
+import NavLink from "./NavLink";
 
 const MobileMenu = () => {
-    const pages = ['Grid', 'Flexbox', 'Github'];
 
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => setAnchorElNav(event.currentTarget);
@@ -13,7 +13,6 @@ const MobileMenu = () => {
         <Box sx={{display: { xs: 'flex', md: 'none' } }}>
             <IconButton
                 size="large"
-                // aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
@@ -39,11 +38,8 @@ const MobileMenu = () => {
                     display: { xs: 'block', md: 'none' },
                 }}
             >
-                {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page}</Typography>
-                    </MenuItem>
-                ))}
+                <NavLink to="/grid" onClick={handleCloseNavMenu}>Grid</NavLink>
+                <NavLink to="/flexbox" onClick={handleCloseNavMenu}>Flexbox</NavLink>
             </Menu>
         </Box>
     );
