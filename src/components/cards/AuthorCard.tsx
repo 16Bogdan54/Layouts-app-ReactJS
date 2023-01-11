@@ -23,7 +23,7 @@ const AuthorCard = ({fullName, link, children}: Props) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button target="_blank" href={link} size="small">Learn More</Button>
+                    <Button target="_blank" href={link} size="small">Github</Button>
                 </CardActions>
             </Card>
         </Grid>
