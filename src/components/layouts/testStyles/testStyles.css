@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.item {
+    text-align: center;
+    border: 1px solid #b95454;
+    font-weight: bold;
+    background: #ffb4b4;
+}

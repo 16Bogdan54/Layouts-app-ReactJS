@@ -5,9 +5,6 @@ import Layout from './Layout'
 const LayoutSection = () => {
     return (
         <Box>
-            <Layout type="flexbox"/>
-            <Layout type="flexbox"/>
-            <Layout type="flexbox"/>
             <Layout type="grid"/>
             <Layout type="grid"/>
             <Layout type="grid"/>
