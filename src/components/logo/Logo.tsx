@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 
 const Logo = () => {
     const styles = {
-        mr: 2,
         fontFamily: 'monospace',
         fontWeight: 700,
         letterSpacing: '.2rem',
@@ -20,7 +19,7 @@ const Logo = () => {
                 <Typography
                     variant="h6"
                     noWrap
-                    component="a"
+                    component="span"
                     sx={styles}
                 >
                     Layouts

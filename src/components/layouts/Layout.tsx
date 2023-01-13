@@ -20,7 +20,7 @@ const Layout = ({type}:Props) => {
                 ))}
             </div>
             <div>
-                <SyntaxHighlighter  className="whitespace-pre d-block border-2" bg="transparent" color="white" children={
+                <SyntaxHighlighter  className="whitespace-pre d-block border-2" bg="transparent" color="white" language="css" children={
                     `.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
