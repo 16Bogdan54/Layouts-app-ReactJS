@@ -11,7 +11,7 @@ const Hero = () => {
             backgroundPosition: 'center',
             padding: '1rem'
         }}>
-            <Grid item xs={12} sm={6} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '1rem'}}>
+            <Grid item xs={12} sm={6} sx={{display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', padding: '1rem'}}>
                 <Typography variant="h4" fontWeight="bold" gutterBottom>The perfect set of css layouts ideas for your project</Typography>
                 <Typography variant="body1" gutterBottom>If you don’t wanna waste your time writing boilerplate code in your CSS files check out our layouts!</Typography>
             </Grid>
