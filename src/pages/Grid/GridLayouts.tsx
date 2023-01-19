@@ -1,12 +1,13 @@
 import React from 'react';
-
-import LayoutSection from "../../components/layouts/LayoutsSection";
+import Layout from "../../components/layouts/Layout";
 import {Box} from "@mui/material";
 
 const GridLayouts = () => {
     return (
-        <Box>
-            <LayoutSection/>
+        <Box p={4}>
+            <Layout type="grid"/>
+            <Layout type="grid"/>
+            <Layout type="grid"/>
         </Box>
     );
 };
