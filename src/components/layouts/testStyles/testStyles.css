@@ -2,6 +2,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
+    transition: border ease .3s;
+    padding: 1rem;
+}
+
+.grid-container:hover {
+    border: 1px solid black;
 }
 
 .item {
