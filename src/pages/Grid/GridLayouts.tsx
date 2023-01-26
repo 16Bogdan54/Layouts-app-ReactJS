@@ -4,11 +4,12 @@ import {Box} from "@mui/material";
 
 const GridLayouts = () => {
     return (
-        <Box p={4}>
-            <Layout type="grid"/>
-            <Layout type="grid"/>
-            <Layout type="grid"/>
-        </Box>
+            <Box p={4}>
+                <h1>Grid</h1>
+                <Layout type="grid"/>
+                <Layout type="grid"/>
+                <Layout type="grid"/>
+            </Box>
     );
 };
 

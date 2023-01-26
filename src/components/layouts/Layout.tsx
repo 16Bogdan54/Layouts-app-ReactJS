@@ -12,7 +12,7 @@ const items: number[] = [1,2,3,4,5,6]
 const Layout = ({type}:Props) => {
     return (
         <Card variant="outlined" sx={{height: 'auto', p: 4, my:4, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}}>
-            <h1>{type === "flexbox" ? "#flexbox" : "#grid"}</h1>
+            <h1>{type === "flexbox" || "flex" ? "#flexbox" : "#grid"}</h1>
             <LayoutBlock/>
             <div>
                 <SyntaxHighlighter language="css" children={
